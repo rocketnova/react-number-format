@@ -58,7 +58,7 @@ type NumberFormatProps<Props, BaseType = InputAttributes> = Props &
 export type OnValueChange = (values: NumberFormatValues, sourceInfo: SourceInfo) => void;
 
 type NumberFormatBase = {
-  type?: 'text' | 'tel' | 'password';
+  type?: 'text' | 'tel' | 'password' | 'search';
   displayType?: 'input' | 'text';
   inputMode?: InputAttributes['inputMode'];
   renderText?: (formattedValue: string, otherProps: Partial<NumberFormatBase>) => React.ReactNode;
